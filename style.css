@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #1a002e, #000);
+    color: white;
+    min-height: 100vh;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card {
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(15px);
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+    max-width: 600px;
+    box-shadow: 0 0 20px rgba(255,0,255,0.4);
+}
+
+h1 {
+    font-size: 3rem;
+    background: linear-gradient(45deg,#ff00ff,#00ffff);
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-bottom: 20px;
+}
+
+p {
+    margin: 15px 0;
+}
+
+.btn {
+    padding: 12px 30px;
+    background: #ff00ff;
+    border: none;
+    border-radius: 25px;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    background: #00ffff;
+}
+
+.btn-group {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.no-btn {
+    position: relative;
+}
+
+.title {
+    text-align: center;
+    margin: 40px;
+}
+
+.slideshow {
+    display: flex;
+    justify-content: center;
+    margin: 40px;
+}
+
+.slide {
+    width: 300px;
+    border-radius: 20px;
+    display: none;
+}
+
+.slide.active {
+    display: block;
+}
+
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}
